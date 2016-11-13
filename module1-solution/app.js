@@ -13,7 +13,7 @@
 
         function calculateLunchMenu(string){
             var lunchItem = string.split(',');
-            if(lunchItem.length == 1)
+            if(lunchItem.length == 1 && string.length == 0)
               $scope.message = 'Please enter data first!';
             else if(lunchItem.length && lunchItem.length <= 3)
               $scope.message = 'Enjoy!';
